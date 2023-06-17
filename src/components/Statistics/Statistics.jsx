@@ -11,9 +11,7 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsDiv>
-      <Title>
-        {title && title}
-      </Title>
+      <Title>{title && title}</Title>
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <Item key={id}>
@@ -26,12 +24,13 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
-Event.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.exact({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  }),
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
-
