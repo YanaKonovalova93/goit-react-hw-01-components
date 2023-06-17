@@ -8,10 +8,10 @@ export const ProfileDiv = styled.div`
 `;
 
 export const Description = styled.div`
-  border: 1px solid black;
+ 
   padding: 8px;
   border-radius: 4px;
-  
+  box-shadow: -1px 10px 24px 1px rgba(34, 60, 80, 0.16);
 `;
 
 export const Avatar = styled.img`
