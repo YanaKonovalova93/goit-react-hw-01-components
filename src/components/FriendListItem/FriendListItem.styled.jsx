@@ -9,12 +9,20 @@ export const Item = styled.li`
   margin-bottom: 8px;
   padding: 8px;
 `;
-export const Status = styled.span`
+export const StatusTrue = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${props => (props.$isOnline ? 'red' : 'blue')}};
+  background-color: green;
 `;
+
+export const StatusFalse = styled.span`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+`;
+
 export const Avatar = styled.img`
   width: 48px;
   
