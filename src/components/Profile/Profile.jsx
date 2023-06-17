@@ -32,7 +32,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   );
 };
 
-Event.propTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,

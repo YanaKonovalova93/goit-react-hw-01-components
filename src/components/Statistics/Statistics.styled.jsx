@@ -6,7 +6,8 @@ export const StatisticsDiv = styled.section`
   padding: 15px;
   border-radius: 4px;
   background-color: rgba(236, 210, 170, 0.636);
-  margin-top: 20px;
+  width: 250px;
+  margin: 20px auto 0;
 `;
 export const Title = styled.h2`
   font-size: 24px;

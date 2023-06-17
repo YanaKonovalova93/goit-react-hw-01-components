@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const ProfileDiv = styled.div`
-  
+  width: 250px;
+  margin: 0 auto;
   padding: 15px;
   border-radius: 4px;
   background-color: rgba(236, 210, 170, 0.636);

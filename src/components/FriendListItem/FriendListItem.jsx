@@ -18,7 +18,7 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
   );
 };
 
-Event.propTypes = {
+FriendListItem.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.exact({
       avatar: PropTypes.string.isRequired,

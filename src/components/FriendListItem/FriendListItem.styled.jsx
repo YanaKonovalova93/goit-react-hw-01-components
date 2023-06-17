@@ -8,6 +8,8 @@ export const Item = styled.li`
   box-shadow: -1px 10px 24px 1px rgba(34, 60, 80, 0.16);
   margin-bottom: 8px;
   padding: 8px;
+  width: 250px;
+  margin: 0 auto;
 `;
 export const StatusTrue = styled.span`
   width: 10px;
