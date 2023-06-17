@@ -5,25 +5,26 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileDiv>
       <Description>
-        <Avatar>{avatar}</Avatar>
+        <Avatar src={avatar} />
         <Name>{username}</Name>
-        <Tag>{tag}</Tag>
+        <Tag>@{tag}</Tag>
         <Location>{location}</Location>
       </Description>
 
       <Stats>
         <StatsLi>
-          <Label text="followers" />
+          <Label>Followers</Label>
           <Quantity>{stats.followers}</Quantity>
         </StatsLi>
 
         <StatsLi>
-          <Label text="views" />
+          <Label>Views</Label>
           <Quantity>{stats.views}</Quantity>
         </StatsLi>
 
         <StatsLi>
-          <Label text="likes" />
+      
+          <Label>Likes</Label>
           <Quantity>{stats.likes}</Quantity>
         </StatsLi>
       </Stats>
@@ -42,3 +43,5 @@ Event.propTypes = {
     likes: PropTypes.number.isRequired,
   }),
 };
+
+
